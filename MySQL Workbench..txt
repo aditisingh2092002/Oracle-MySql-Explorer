@@ -1,0 +1,86 @@
+MySQL Workbench:--
+
+>>Workbench is a utility you can download, install, and use for managing your MySQL database.
+
+>>Workbench is a unified GUI tool that helps database architects, developers, and DBAs manage MySQL server and data. 
+
+>>It is a utility you can download, install, and use for managing your MySQL database. MySQL Workbench is available in the Community Edition, which is the foundation of all Workbench editions.
+
+>>It is a full-featured powerful database management tool. It is subject to the Open Source General Public license, and therefore available free from the MySQL website. There is the Standard Edition, which is the commercial extension of the Community Edition. It has advanced features, like MySQL-specific schema validation, model validation, general schema validation, and DBDoc documentation tools.
+
+>>You can download MySQL Workbench Community Edition from dev.mysql.com/downloads/workbench. Depending on the user requirements, MySQL Workbench is a unified visual tool for database architects, developers, and DBAs alike. It includes everything a data modeler needs for creating complex ER models, forward and reverse engineering, and also delivers key features for performing difficult change management and documentation tasks that normally require much time and effort.
+
+>>MySQL Workbench provides a visual console to easily administer MySQL environments and gain better visibility into databases. Developers and DBAs can use the visual tools for configuring servers, administering users, performing backup and recovery, inspecting audit data, and viewing database health.
+
+>>MySQL Workbench delivers visual tools for creating, executing, and optimizing SQL queries. The SQL Editor provides color syntax highlighting, autocomplete, reuse of SQL snippets, and execution history of SQL. The Database Connections panel enables developers to easily manage standard database connections.
+
+>>MySQL Workbench now provides a complete, easy-to-use solution for migrating Microsoft SQL Server, Microsoft Access, Sybase ASE, PostgreSQL, and other RDBMS tables, objects, and data to MySQL. Developers and DBAs can quickly and easily convert existing applications to run on MySQL, both on Windows and other platforms. Migration also supports migrating from earlier versions of MySQL to the latest releases.
+
+>>Edition Available:--
+  			
+		** Community Edition(GPL)
+		** Standard Edition(Commercial)
+		** Enterprise Edition 
+
+>> MySQL Workbench Capabilities:--
+	
+	1.) Data Modeling:
+          
+		##Extended Entity Relationship Modeling.
+		##Edit and execute SQL queries and scripts.
+		##Design, generate and mange databases.
+	
+	2.) Server Administration:--
+
+		##Start and Stop the server.
+		##Edit database server configuration.
+		##Manage users.
+		##import and export data.
+	
+	3.) SQL Development:--
+
+		##edit and execute SQL queries and scripts.
+		##create or alter database objects.
+		##edit table data.
+
+>> MySQL Workbench Additional features:--
+
+ 		** Database Migration:
+
+		-->>Migrate tables and objects from other RDBMSs to MySQL.
+		-->>Convert existing applications to run on MySql on Windows and other Platforms.
+		-->>Upgrade to later versions of MySQL.
+
+>> MySQL Workbench: Creating a Connection--
+
+1.) Click the plus(+) sign.
+2.) Enter the connection Name.
+3.) Click the TEST connection button.
+
+>> MySQL Workbench: Managing Connection--
+
+1.) Select Database> Manage Connections.
+2.) Select the Connection.
+3.) Click the TEST connection button.
+
+>> MySQL Workbench: Starting MySQL Server--
+
+1.) Select Startup/Shutdown.
+2.) Click the start server button.
+3.) Enter the password.
+ 
+>> MySQL Workbench: Stopping MySQL Server--
+
+1.) Select startup/ shutdown.
+2.) Click the stop server button.
+
+>> MySQL Workbench: Importing data--
+
+1.) Select data import/restore.
+2.) select import from self-contained file.
+3.) enter the file name.
+4.) click new.
+5.) enter the schema name.
+6.) click the start import button.
+
+
