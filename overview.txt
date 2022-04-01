@@ -1,0 +1,33 @@
+ORACLE MyLearn
+Overview: MySQL
+
+MySQL Enterprise Edition:-
+
+Advanced Features:
+<High Availability
+<Authentication
+<Audit
+<Encryption and TDE
+<Firewall
+<Masking
+
+Management Tools:
+<Monitoring
+<BackUp
+<Development
+<Administration
+<Migration
+
+Support:
+<Technical Support
+<Consultative Support
+<Oracle Certification
+
+MySQL & Oracle Integration:-
+	1. Oracle Linux
+	2. Oracle Golden Gate
+	3. Oracle Secure Backup
+	4. Oracle Fusion Middleware
+	5. Oracle Enterprise Manager
+	6. Oracle Database Firewall
+
