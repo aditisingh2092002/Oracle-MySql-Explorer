@@ -1,0 +1,37 @@
+Basic Queries in MySQL:--
+
+## Retrieving data in MySQL Using Select Statement:--
+   
+	->Select is the most commonly used DML command for queies.
+			**Retrieves rows from tables in a database.
+			**Returns rows as a "result set"in the form of a table.
+
+	->General Syntax:-
+			**SELECT [clause options] column_list
+				[from table_name] [other_clauses]
+
+	->column_list is a list of column name that make up the result set.
+			**Separate items in the list with a comma separator(,).Use an * to include all columns rather than list them separately.
+
+>> MySQL Workbench sets a limit on the number of rows returned. 
+
+>> SELECT Statement Example in MySQL Workbench:--
+
+		1.) Right-click the column.
+		2.) Select send to SQL Editor> select Columns statements
+		3.) Clik execute icon.
+
+>> SELECT statement example with *--
+
+	-->>selecting all columns is usually not recommended, because it requires a full table scan that does not perform well.
+	-->>To cause MySQL Workbench to generate SELECT ALL statements, right-click the table, select Send to SQL Editor, navigate to Select All Statement from the shortcut menu, and MySQL Workbench generates a SELECT statement to the SQL editor.
+	-->>Click the Execute icon or press Control plus Enter.
+
+>> A SELECT statement is easily customized to meet the end users' needs to retrieve the desired output.
+
+>> Statement selects distinct or unique rows from a named table where some condition defines which draws to return, returns the results in the specified order that is ORDER BY, limits the number of rows to be retrieved to a given number. In the example on the screen, without DISTINCT the query returns one row for every country, repeating the continent many times. With the DISTINCT keyword, the query returns only the seven continents.
+
+>> With the DISTINCT keyword, only unique combinations of the columns are returned in the query.
+
+>> A NULL value is used in databases to signify a missing or unknown value. All NULL values are treated as identical with the DISTINCT keyword. So duplicates that include NULL are eliminated. In the example on the screen, some combinations of continent and independence year called IndepYear might include NULL for the IndepYear of a country on that continent. The duplicate continents that include NULL for the IndepYear are eliminated.
+	
