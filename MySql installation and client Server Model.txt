@@ -1,0 +1,50 @@
+MySQL Client/Server Model
+
+
+1.) The MySQL database system uses a client server architecture. To access the data in the database, on MySQL server must be running.
+
+2.) The MySQL server is the central program that manages database contents. The MySQL server program, mysqld, listens for incoming connection requests. 
+
+3.) Client programs connect to the server to retrieve or modify data. The client in MySQL is any application that sends a request to the database via the server. A client is used to communicate with the MySQL server whenever a command statement is sent, whether it is from a PHP script or one of the standard MySQL clients.
+
+4.) The client connects, does what it needs to do, and then disconnects. 
+
+5.) The server can handle multiple client connections simultaneously.
+
+6.) TCP/IP can also be used for a local connection. Unix or Linux local connections can use a Unix socket file or TCP/IP.
+
+On Windows, local connections can use a shared pipe or shared memory.
+
+7.) The client that connects to the MySQL database might be a commercial application, a webpage, or a custom application that is written in the programming language. MySQL provides software called drivers, or connectors, that enable the client to access the data in the server. The MySQL connectors are available for Linux or Unix, Windows, and macOS.
+
+8.) Drivers for other languages, such as the PHP, Perl, and Ruby, are available from other sources. For a client to use a connector, you must install it on the client host. The server does not have to be on the same machine or running the same operating system as the client. Therefore, MySQL connectors are very useful for providing MySQL connectivity in heterogeneous environments.
+
+9.) MySQL provides several websites to provide you product information, including platform-dependent installation and guidance. In the next video, we will see a demo on installing and setting MySQL and starting the MySQL Client from the command line prompt
+
+Demo Setup:-
+
+ This demo is applicable to the Linux, Windows, and Mac OS operating systems.
+
+ In order to install and set up MySQL, follow the directions which are listed in this website, dev.dot.mysql.com/docs/mysql-getting-started.
+
+ 	#First, open a Linux terminal window. This is the prompt where we will enter our commands. Install the MySQL server and client by using yum as the root user. At the Linux terminal window command line prompt, enter the following commands, being careful to use the correct case, uppercase case and lower case, for the directory names. Switch to root user and then navigate to the folder which contains the RPM files.
+
+At the Linux terminal window command line prompt, enter this command. This installs common files for client and server libraries. The installation displays the package to be installed and prompts to continue. Enter Y and press Enter.
+
+Enter the following command. This installs shared libraries for MySQL database client applications. 
+
+	#Enter Y and press Enter. Enter the following command. This installs shared compatibility libraries for previous MySQL installations. Enter Y, press Enter.
+
+At the command line prompt, enter this following command. This installs the MySQL client applications and tools. Enter Y and press Enter.
+
+Enter the following command. This installs the database server and related tools. Enter Y and press Enter.
+
+	#Start the MySQL server as the root user with the following command-- systemctl start mysqld.service. Enter the following command to have the MySQL server start on reboot of the Linux machine-- systemctl enable mysqld.
+
+Switch to the root user if you're not currently the root user and navigate to the /var/log directory. Obtain the temporary password for the root account from mysqld.log file. Exit from the root account.
+
+Note the line that says a temporary password is generated for the root@localhost. Highlight the temporary password, right-click, and click Copy. And enter the following command at the prompt-- mysql -u root -p.
+
+	#At the prompt, right-click and click Paste. The entry will not be shown. Click Enter. Reset the root password and exit. Enter the following statement in the MySQL command line client-- ALTER USER USER, IDENTIFIED BY "MySQL8.0," which is the password. The password is now set to "MySQL8.0."
+
+Enter the following command to connect the MySQL server using the MySQL command line program with the new password-- mysql -u root -p. And this concludes the demo on setting up the MySQL server.
