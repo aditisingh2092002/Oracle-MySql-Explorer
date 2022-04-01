@@ -1,0 +1,49 @@
+MySql Command-Line Tool
+
+1.) In the production environment, applications access the database to query data and update the database. The MySQL client is a common tool for database administrators, developers, testers, and end users to perform day to day activities. These activities might include creating objects, inserting, updating, deleting, and retrieving data.
+
+2.) The administrative side might require database security when creating users and providing access to data, or they would like to perform data movement between systems, create required databases, and performance tuning. You can start the MySQL command line client with command mysql -u root -p.
+
+3.) Example on the screen uses the -u option, followed by the user name, and the -p option. When you use the -p option without the password value, the MySQL client prompts for the password. When you type the password at the prompt, it does not display on the screen. The -u and -p options are short forms of the --user and --password password options.
+
+4.) You will see both forms being used. After invoking the MySQL client, take note of the connection ID and server version, and the Help command. After installation using RPM Packages, the only available account is the root account. The root account has global permissions and makes it easy to delete data and system information by mistake.
+
+5.) To Edit mysql client commans, Use----
+		
+			>> Arrow Keys
+			>> Backspace key to delete the character to the left of the cursor.
+			>> The command history preserved during the session.
+			>> Character sequence(\c) to cancel a command being entered.
+			>> Enforced quote closure.
+** The up arrow and down arrow keys cycle through the command history. Use the up arrow and down arrow keys to recall a command from the command history. Move the cursor within the command with the left arrow and right arrow keys. Use the Backspace key to delete characters to the left of the cursor.
+** Command history is preserved between MySQL client sessions.
+** Cancel a query before you have finished entering it with /c without terminating the MySQL client.
+** /u@/h, it displays the user name, that is /u, logged into the MySQL client, and the name of the host computer, signified by /h. The Help command provides a list of all MySQL commands. The Exit or Quit command exits the MySQL client.
+
+6.) tee File Logging:-
+
+			>> logs all mysql client statements and output.
+			>> everything displayed on screen is appended into a file.
+			>> start logging by entering the tee command mysql>tee session_tee_filename.txt
+			>> stop tee file logging with the notee command.
+
+Demo for MySQL command line:--
+
+	** At the terminal, enter the following command. View help for the MySQL command line commands by using the help command. Create a tee file, named myfile to log your MySQL command line session. Execute the following command at the prompt. You get a message that confirms the creation of the tee file.
+
+Use the keyboard to execute the earlier help command and retrieve the help command by pressing the Up Arrow key twice. This returns the command from the last command issued at the prompt, which, in this case, is the slash h command. Press Enter.
+
+
+	**Use the keyboard to recall the tee command entry in order to edit the command. Press the Up Arrow key twice to retrieve the tee command. This returns the tee command for you to edit, but do not press Enter. Hit Backspace to erase the tee myfile command.
+
+Look at myfile with the more command from the MySQL client. More returns the commands you have typed and subsequently logged to the myfile. You may be required to hit the Spacebar to page through the file myfile, depending on the size of your monitor. Cancel login to the myfile file. Issue the notee command.
+
+
+	**Re-execute the command to restart the tee file login. With the myfile file. Return to the first tee command by pressing the Up Arrow key four times and then press Enter.
+
+The output is appended to the existing fire. Start to cancel the tee file, but using the MySQL command backslash c to abort the command execution. Enter the notee command followed by backslash c to abort. The prompt appears without executing the command. Exit the MySQL command line.
+
+The standard Command Prompt is returned. 
+
+
+	**Close the terminal or command window. With this the demo on using the keyboard editing and tee commands comes to an end.
