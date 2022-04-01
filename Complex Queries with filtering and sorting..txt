@@ -1,0 +1,29 @@
+Complex Queries in MySQL:--
+
+Filtering and Sorting Data--
+
+	->Filtering will help separate detail we don't need and retrieve data we actually need from rows and tables.
+	->SELECT with Where:-
+		** Expressions in a WHERE clause can use the following types of operators:-
+			
+			i) Arithmetic-> +,-,*,/,DIV,%;
+			ii) Camparison-> <,>,<=,<=>,>=,between
+			iii) Logical-> AND, OR, XOR, NOT
+			iv) Additional options-> IN, IS NULL, LIKE, ()
+	-> The LIKE operator performs pattern matching on characters in a string.
+	-> With LIKE, you can use wildcard characters in the pattern to be matched. The Percentage wildcard character matches any number of characters, even zero characters. The Underscore wildcard character matches exactly one character. MySQL Logical XOR returns a null when one of the operants is null.
+	-> The Percentage symbol is a multi character wildcard, whereas the Underscore symbol is a single character wildcard.
+	-> In columns that allow null values, MySQL sorts null before other data values. 
+	-> ORDER BY sorts values in ascending order by default. You can specify the sort order explicitly using the ASC or DSC keywords after the column names.
+	-> ORDER BY also works with functions, mathematical operations, at any value expression. Not only can you order, but you can also have two options in selecting that order. 
+	-> The LIMIT clause constrains the number of rows that appear in the Result set. MySQL Workbench and the list the rows returned, but you can override that number with a LIMIT clause. You can use the LIMIT clause with either one or two arguments. The row count with LIMIT clause or skip count and row count with LIMIT clause.
+	-> Workbench automatically sets default limits that you have the ability to override. MySQL Workbench maintains a default limit value for all queries executed via MySQL Editor.
+
+SELECT Usage tips:--
+  
+ 	** treat table an database names as case-sensitive.
+	** from the mysql command line client-
+			##use \c to abort a SQL statement.
+			##use \G in place of; to see results vertically with each column in a row, instaead of as a table.
+	** use * (all columns) with cause; it can waste resouces.
+  
